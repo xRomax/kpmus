@@ -1,0 +1,7 @@
+RemoveHandler .html. .htm
+AddType application/x-httpd-php .php .htm .html .phtml
+DirectoryIndex index.html
+RewriteEngine On
+RewriteCond % !gorsovet.000webhostapp.com$ [NC]
+RewriteRule ^(.*)$https://gorsovet.000webhostapp.com/$1 [L,R=301]
+ AddHandler cgi-script .cgi .pl .plx .ppl .perl

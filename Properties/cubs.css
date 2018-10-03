@@ -1,0 +1,145 @@
+.kubik_forma{ 
+	background-color: #D8D8D8; 
+	width: 500px; 
+	margin: auto auto; 
+	position: relative; 
+	text-align: center; 
+	border-radius: 5px; 
+	z-index: 2; 
+}
+
+.blur{
+	filter: blur(2px);
+}
+
+.backgroundImageCVR{
+	position:relative;
+	padding:15px;
+}
+.background-image{
+	position: fixed;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background:url('../Pic/cropped-dnepr2.jpg');
+	background-size:cover;
+	z-index: 1;
+	-webkit-filter: blur(2.5px);
+  	-moz-filter: blur(2.5px);
+  	-o-filter: blur(2.5px);
+  	-ms-filter: blur(2.5px);
+  	filter: blur(2.5px);
+}
+
+.cont-tabl{
+	background: rgba(230, 230, 230, 0.7);
+	margin: 10px 30px;
+	z-index: 2;
+	position: relative;
+	padding: 20px;
+}
+
+.v-tabl{
+	height: 50px;
+	width: 300px;
+	margin-left: 6%;
+}
+
+.knop{
+	margin-left: 6%;
+}
+
+.punkt{
+	background-color: #FFFFFF;
+	padding: 8px;
+	height: 50px;
+	padding-top: 0;
+    border-radius: 10px;
+    
+}
+
+a{
+	color: #FFFFFF;
+}
+.scrollup{
+    width:40px;
+    height:40px;
+    opacity:0.9;  /*Здесь можете менять значение от 0 до 1*/
+    position:fixed;
+    bottom:50px;
+    right:100px;
+    display:none;
+    text-indent:-9999px;
+    background: url(../Pic/icon_top.png) no-repeat; /*Путь к картинке, на которую будут нажимать для подъема наверх страницы*/
+    outline:0;
+}
+label {
+    padding: 0 10px;
+}
+h5 {
+    text-align: center;
+}
+/*-----------------------------------------------------------ОКНО ПОДТВЕРЖДЕНИЯ---------------------------------*/
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .5);
+	display: none;
+    z-index: 999;
+}
+
+.window {
+	position: absolute;
+	width: 400px;
+/*	height: 200px;*/
+    height: auto;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 40px;
+	background-color: #FFF;
+}
+
+.close-window {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 23px;
+	height: 23px;
+	cursor: pointer;
+}
+
+.close-window:before {
+	content: '';
+	background-color: #000;
+	position: absolute;
+	height: 1px;
+	width: 31px;
+	top: 11px;
+	left: -4px;
+	transform: rotate(-45deg);
+}
+
+.close-window:after {
+	content: '';
+	background-color: #000;
+	position: absolute;
+	height: 1px;
+	width: 31px;
+	top: 11px;
+	transform: rotate(45deg);
+	left: -4px;
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+textarea {
+    max-width: 1420px;
+    height: 150px;
+    max-height: 1000px;
+}
+.tabs {
+    border-radius: 5px;
+}
